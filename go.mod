@@ -9,7 +9,6 @@ require (
 	github.com/gomodule/redigo v2.0.0+incompatible
 	github.com/grpc-ecosystem/go-grpc-middleware v1.2.2
 	github.com/grpc-ecosystem/go-grpc-prometheus v1.2.0
-	github.com/grpc-ecosystem/grpc-gateway v1.16.0 // indirect
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.0.1
 	github.com/jinzhu/gorm v1.9.16
 	github.com/oklog/ulid v1.3.1
@@ -18,7 +17,7 @@ require (
 	github.com/prometheus/procfs v0.2.0 // indirect
 	github.com/sirupsen/logrus v1.4.2
 	github.com/sony/sonyflake v1.0.0
-	go.elastic.co/apm v1.8.0
+	go.elastic.co/apm v1.11.0
 	go.elastic.co/apm/module/apmgrpc v1.8.0
 	go.elastic.co/apm/module/apmlogrus v1.8.0
 	google.golang.org/grpc v1.33.1
