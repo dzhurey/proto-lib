@@ -6,6 +6,7 @@ import (
 	"net/http"
 
 	runtime "github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
+	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"google.golang.org/grpc"
 )
 
@@ -61,5 +62,6 @@ func RunHTTPWithCustomMatcher(init func() error, registerHandler func(ctx contex
 		return err
 	}
 
+	http.Handle("/metrics", promhttp.Handler())
 	return http.ListenAndServe(fmt.Sprintf(":%s", HTTPPort), mux)
 }
